@@ -6,9 +6,38 @@
 
 # Exercises
 
-## S1.1 - Convert Loops
+## S1.1 - calculateExponential
 
-Rewrite the following functions to use recursion instead of loops.
+Rewrite the following function to use recursion instead of a `for` loop.
+
+```JavaScript
+/**
+ * calculateExponential mimics `Math.pow()`
+ * @param {Number} base
+ * @param {Number} exponent - must be greater than or equal to 0
+ * @returns {Number}
+ */
+function calculateExponential(base, exponent) {
+  var result = 1;
+
+  for(var i = 0; i < exponent; i++) {
+    result *= base;
+  }
+
+  return result;
+}
+
+// Example usage:
+console.log(calculateExponential(2, 0)); // logs 1
+console.log(calculateExponential(2, 1)); // logs 2
+console.log(calculateExponential(2, 2)); // logs 4
+console.log(calculateExponential(2, 3)); // logs 8
+```
+
+
+## S1.2 - applyDiscount
+
+Rewrite the following function to use recursion instead of a `for` loop.
 
 ```JavaScript
 /**

@@ -17,7 +17,7 @@ Use recursion to write a function called `map` that transforms an array's data t
  * @returns {Array} - new array of transformed data
  */
 function map(arr, callback) {
-  // add your code here
+  // Delete this comment and ADD YOUR CODE HERE <(^.^<)
 }
 
 // Example usage: apply 50% discount to a collection of prices
