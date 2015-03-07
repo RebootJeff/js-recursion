@@ -1,5 +1,7 @@
 # Set 1
 
+These exercises focus on the basics of recursion by emphasizing that loops can be replaced with recursion.
+
 ## Instructions
 
 ...
