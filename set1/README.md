@@ -102,7 +102,7 @@ shallowCheck({ price: 1 }, 1); // returns true;
 
 ## S1.extra1 - deepCountPrimitives
 
-Write a function that uses recursion to count the number of values (objects of primitive data type) in a collection. If the collection contains nested collections, then `deepCountPrimitives` should count search them too. **Hint:** You may need to use recursion *and* loops.
+Write a function that uses recursion to count the number of values (objects of primitive data type) in a collection. If the collection contains nested collections, then `deepCountPrimitives` should count search them too.
 
 ```JavaScript
 /**
@@ -120,3 +120,4 @@ deepCountPrimitives([1, 2, { a: 3 }]); // returns 3;
 deepCountPrimitives({ a: 1, b: [2, 3] }); // returns 3;
 deepCountPrimitives([{ a: { b: [{ c: 1 }, { d: 2 }] } }]); // returns 2;
 ```
+**Hint:** You may need to use recursion *and* loops.

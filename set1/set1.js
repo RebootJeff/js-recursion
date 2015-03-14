@@ -1,18 +1,24 @@
+// Functions are attached to an object as methods for Jasmine to spy on
+var yourAnswers = {};
+
 /**
  * calculateExponential mimics `Math.pow()`
  * @param {Number} base
  * @param {Number} exponent - must be greater than or equal to 0
  * @returns {Number}
  */
-function calculateExponential(base, exponent) {
-  var result = 1;
+yourAnswers.calculateExponential = function(base, exponent, result) {
+  result = result || base;
 
-  for(var i = 0; i < exponent; i++) {
+  if(exponent === 0) {
+    return 1;
+  } else if(exponent === 1) {
+    return result;
+  } else {
     result *= base;
+    return yourAnswers.calculateExponential(base, exponent - 1, result);
   }
-
-  return result;
-}
+};
 
 /**
  * applyDiscount calculates a new list of prices
@@ -20,9 +26,9 @@ function calculateExponential(base, exponent) {
  * @param {Number} discountFactor
  * @returns {Number[]} - array of discounted prices
  */
-function applyDiscount(originalPrices, discountFactor) {
+yourAnswers.applyDiscount = function(originalPrices, discountFactor) {
   // your code goes HERE
-}
+};
 
 /**
  * shallowCheck determines whether or not a value is in a collection
@@ -30,9 +36,9 @@ function applyDiscount(originalPrices, discountFactor) {
  * @param {*} target
  * @returns {Boolean}
  */
-function shallowCheck(collection, target) {
+yourAnswers.shallowCheck = function(collection, target) {
   // your code goes HERE
-}
+};
 
 /**
  * deepCountPrimitives determines the number of primitives in a collection
@@ -40,6 +46,6 @@ function shallowCheck(collection, target) {
  * @param {Array|Object} collection
  * @returns {Number}
  */
-function deepCountPrimitives(collection) {
+yourAnswers.deepCountPrimitives = function(collection) {
   // Delete this comment and ADD YOUR CODE HERE <(^.^<)
-}
+};
