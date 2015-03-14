@@ -17,6 +17,14 @@ Use the following tools as you see fit:
 - **jsbin.com** or **repl.it** for writing and running code
 - **Google Search** for learning jargon and syntax
 
+## What's a "SpecRunner"?
+
+If you'd like some extra confirmation that your answers are correct, try using the SpecRunner found in exercise folders. To use the SpecRunner, put your code into the correct JavaScript file and then open the SpecRunner in a browser.
+
+For example, for Exercise Set 1, put your code into the right spots inside `set1.js` and then open `SpecRunner.html` in a browser. If you make changes to your answers in `set1.js`, save the file and then refresh the browser to see if your changes have affected the results.
+
+If you're curious about how the SpecRunner is testing out your code, open up the corresponding Spec file (e.g., `set1Spec.js`), and learn yourself some Test Driven Development code!
+
 ## A Note About Teaching Assistants (TAs)
 
 Feel free to ask TAs for help. They are here to help you! A good rule of thumb is to try searching the Internet for help first. Then convert your struggle into a clear set of questions. Then ask those questions to a TA.
